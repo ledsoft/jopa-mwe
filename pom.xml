@@ -10,6 +10,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
@@ -28,7 +29,11 @@
             <artifactId>ontodriver-sesame</artifactId>
             <version>${cz.cvut.kbss.jopa.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.2.10</version>
+        </dependency>
     </dependencies>
 
     <build>
